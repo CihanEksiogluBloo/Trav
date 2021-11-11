@@ -17,5 +17,8 @@ export type ProvinceStackParamList = {
   SelectProvince: undefined;
 }
 
+
   export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
   NativeStackScreenProps<RootStackParamList, Screen>;
+
+  export type ProvinceObject = {province: string}

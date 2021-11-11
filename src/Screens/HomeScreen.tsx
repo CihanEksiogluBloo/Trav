@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {ImageBackground, StyleSheet, Text, View} from 'react-native';
 import HomeButton from '../Components/Button/HomeButton';
 import {AntDesign, MaterialCommunity} from '../Components/Icons/Icon';
 import Colors from '../Constants/Colors';
 import {RootStackScreenProps} from '../types';
 import useColorScheme from '../Hooks/useColorScheme';
-import {Control, LayoutDetail} from '../Constants';
+import {Control, LayoutDetail,Provinces} from '../Constants';
+
 
 const dimentions = LayoutDetail;
 
 const HomeScreen: React.FC<RootStackScreenProps<'Home'>> = ({navigation}) => {
-  
+
+  function capitalizeFirstLetter(string:string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   const colorScheme = useColorScheme();
   const {home} = Control
 

@@ -7,6 +7,7 @@ export default {
     white:"white",
     green:"#00E0BA",
     black:"black",
+    black05:"rgba(0,0,0,0.5)"
   },
   dark: {
     red:"#FA494C",
@@ -16,5 +17,6 @@ export default {
     white:"white",
     green:"#00E0BA",
     black:"black",
+    black05:"rgba(0,0,0,0.5)"
   },
 };

@@ -9,24 +9,26 @@ import {Control, LayoutDetail} from '../Constants';
 
 const dimentions = LayoutDetail;
 
-const HomeScreen: React.FC<RootStackScreenProps<'HomeStack'>> = () => {
+const HomeScreen: React.FC<RootStackScreenProps<'Home'>> = ({navigation}) => {
+  
   const colorScheme = useColorScheme();
   const {home} = Control
 
   const whyTurkeyButtonPressHandler = () => {
+    navigation.navigate("WhyScreen")
     
   }
 
   const letStartButtonPressHandler = () => {
-
+    navigation.navigate("SelectProvinceStack")
   }
 
   return (
     <ImageBackground
       source={require('../Assets/Images/mainscreen.png')}
       style={styles.imageContainer}
-      resizeMethod="resize"
-      resizeMode="cover">
+      resizeMethod="auto"
+      resizeMode="stretch">
       <View style={styles.generalContainer}>
 
         <View>

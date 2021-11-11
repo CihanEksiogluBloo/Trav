@@ -8,10 +8,14 @@ declare global {
   
   
 export type RootStackParamList = {
-    HomeStack: undefined;
-    SelectProvince: undefined;
+    Home: undefined;
+    SelectProvinceStack: undefined;
+    WhyScreen: undefined;
     
   };
+export type ProvinceStackParamList = {
+  SelectProvince: undefined;
+}
 
   export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
   NativeStackScreenProps<RootStackParamList, Screen>;

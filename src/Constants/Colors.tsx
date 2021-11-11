@@ -1,16 +1,20 @@
 export default {
   light: {
-    red:"#D25162",
-    blue:"#4880E1",
-    grey:"#C5CAE8",
+    red:"#FA494C",
+    blue:"#4880E2",
+    softblue:"#BBCDF1",
+    grey:"#CCC7E2",
     white:"white",
     green:"#00E0BA",
+    black:"black",
   },
   dark: {
-    red:"#D25162",
-    blue:"#4880E1",
-    grey:"#C5CAE8",
+    red:"#FA494C",
+    blue:"#4880E2",
+    softblue:"#BBCDF1",
+    grey:"#CCC7E2",
     white:"white",
     green:"#00E0BA",
+    black:"black",
   },
 };

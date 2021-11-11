@@ -1,16 +1,16 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-
+import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import CustomView from '../Components/CustomView/CustomView';
 
 
 const SelectProvince: React.FC = () => {
-    return (
-        <View>
-            <Text></Text>
-        </View>
-    )
-}
+  return (
+    <CustomView>
+      <Text>asdasdas</Text>
+    </CustomView>
+  );
+};
 
-export default SelectProvince
+export default SelectProvince;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

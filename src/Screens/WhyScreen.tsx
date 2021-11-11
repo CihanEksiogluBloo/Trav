@@ -1,11 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import CustomView from '../Components/CustomView/CustomView'
 
 const WhyScreen: React.FC = () => {
     return (
-        <View>
-            <Text></Text>
-        </View>
+        <CustomView>
+            
+        </CustomView>
     )
 }
 

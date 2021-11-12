@@ -13,16 +13,16 @@ const SelectProvinceButton: React.FC<SelectProvinceButtonType> = ({
   province,
 }) => {
   const useColor = useColorScheme();
-  const {SelectProvinceButtonControl} = Control;
+  const {SelectProvinceControl} = Control;
   return (
     <View style={styles.container}>
       <Pressable
         style={[
           styles.pressableStyle,
-          {backgroundColor: SelectProvinceButtonControl.BG[useColor]},
+          {backgroundColor: SelectProvinceControl.BG[useColor]},
         ]}
         android_ripple={{
-          color: SelectProvinceButtonControl.rippleColor[useColor],
+          color: SelectProvinceControl.rippleColor[useColor],
         }}>
         <Text
           style={[styles.text, {color: Control.generalText.color[useColor]}]}>

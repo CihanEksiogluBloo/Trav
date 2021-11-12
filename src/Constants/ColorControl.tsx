@@ -27,10 +27,13 @@ const Control: {[key: string]: {[key: string]: {light: string; dark: string}}} =
     generalIcons:{
       color:{light:light.white,dark:dark.white}
     },
-    SelectProvinceButtonControl: {
+    SelectProvinceControl: {
       rippleColor: {light: light.green, dark: dark.softblue},
       BG: {light: light.black05, dark: dark.black05},
+      searchBarBG:{light:light.white,dark:dark.white},
+      searchBarText:{light:light.black,dark:dark.black}
     },
+
   };
 
 export default Control;

@@ -1,6 +1,6 @@
 export default {
   light: {
-    red:"#FA494C",
+    red:"#F64C50",
     blue:"#4880E2",
     softblue:"#BBCDF1",
     grey:"#CCC7E2",
@@ -10,7 +10,7 @@ export default {
     black05:"rgba(0,0,0,0.5)"
   },
   dark: {
-    red:"#FA494C",
+    red:"#F64C50",
     blue:"#4880E2",
     softblue:"#BBCDF1",
     grey:"#CCC7E2",

@@ -1,11 +1,11 @@
-import React from 'react';
-import {Pressable, StyleSheet, Text, View} from 'react-native';
-import {Control} from '../../Constants';
-import useColorScheme from '../../Hooks/useColorScheme';
+import React from "react";
+import {Pressable, StyleSheet, Text, View} from "react-native";
+import {Control} from "../../Constants";
+import useColorScheme from "../../Hooks/useColorScheme";
 
 type SelectProvinceButtonType = {
   province: string;
-  onPressProvince: () => void;
+  onPressProvince: (province: string) => void;
 };
 
 const SelectProvinceButton: React.FC<SelectProvinceButtonType> = ({
@@ -17,6 +17,7 @@ const SelectProvinceButton: React.FC<SelectProvinceButtonType> = ({
   return (
     <View style={styles.container}>
       <Pressable
+        onPress={() => onPressProvince(province)}
         style={[
           styles.pressableStyle,
           {backgroundColor: SelectProvinceControl.BG[useColor]},
@@ -33,15 +34,15 @@ const SelectProvinceButton: React.FC<SelectProvinceButtonType> = ({
   );
 };
 
-function areEqual(prevProps : any, nextProps : any ) {
-  return prevProps == nextProps
+function areEqual(prevProps: any, nextProps: any) {
+  return prevProps == nextProps;
 }
 
-export default React.memo(SelectProvinceButton,areEqual);
+export default React.memo(SelectProvinceButton, areEqual);
 
 const styles = StyleSheet.create({
-  container: {margin: 5, borderRadius: 10, overflow: 'hidden'},
-  pressableStyle: {alignItems: 'center', padding: 10, borderRadius: 10},
+  container: {margin: 5, borderRadius: 10, overflow: "hidden"},
+  pressableStyle: {alignItems: "center", padding: 10, borderRadius: 10},
   text: {
     fontSize: 16,
   },

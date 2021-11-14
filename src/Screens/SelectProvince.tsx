@@ -1,18 +1,20 @@
-import React, {useState} from 'react';
-import {Dimensions, FlatList, StyleSheet, View} from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
-import SelectProvinceButton from '../Components/Button/SelectProvinceButton';
-import CustomView from '../Components/CustomView/CustomView';
-import SelectProvinceHeader from '../Components/Headers/SelectProvinceHeader';
-import {AntDesign} from '../Components/Icons/Icon';
-import SearchInput from '../Components/Search/SearchInput';
-import {Control, LayoutDetail, Provinces} from '../Constants';
-import useColorScheme from '../Hooks/useColorScheme';
-import {ProvinceObject} from '../types';
+import React, {useState} from "react";
+import {Dimensions, FlatList, StyleSheet, View} from "react-native";
+import {TextInput} from "react-native-gesture-handler";
+import SelectProvinceButton from "../Components/Button/SelectProvinceButton";
+import CustomView from "../Components/CustomView/CustomView";
+import SelectProvinceHeader from "../Components/Headers/SelectProvinceHeader";
+import {AntDesign} from "../Components/Icons/Icon";
+import SearchInput from "../Components/Search/SearchInput";
+import {Control, LayoutDetail, Provinces} from "../Constants";
+import useColorScheme from "../Hooks/useColorScheme";
+import {ProvinceObject, RootStackScreenProps} from "../types";
 
 const regex = new RegExp(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g);
 
-const SelectProvince: React.FC = () => {
+const SelectProvince: React.FC<RootStackScreenProps<"SelectProvinceStack">> = ({
+  navigation,
+}) => {
   const {SelectProvinceControl} = Control;
   const colorScheme = useColorScheme();
   const [showSearchInput, setShowSearchInput] = useState<boolean>(false);
@@ -20,11 +22,13 @@ const SelectProvince: React.FC = () => {
     searchKey: string;
     filteredData: ProvinceObject[];
   }>({
-    searchKey: '',
+    searchKey: "",
     filteredData: [],
   });
 
-  const onPressProvince = () => {};
+  const onPressProvince = (province: string) => {
+    navigation.navigate("AfterSelect")
+  };
 
   const onChangeSearchText = React.useCallback((text: string) => {
     setFilteredData(prev => {
@@ -32,7 +36,7 @@ const SelectProvince: React.FC = () => {
         const transformedText = text.trim().toLowerCase();
         const testResult = regex.test(transformedText);
         if (testResult) {
-          return {filteredData: [], searchKey: ''};
+          return {filteredData: [], searchKey: ""};
         }
         const filteredData = Provinces.filter(item =>
           item.province.toLowerCase().includes(transformedText),
@@ -60,9 +64,9 @@ const SelectProvince: React.FC = () => {
   }, [showSearchInput]);
 
   return (
-    <View>
+    <CustomView>
       {showSearchInput && (
-        <View style={{justifyContent: 'center'}}>
+        <View style={{justifyContent: "center"}}>
           <SearchInput
             setValue={onChangeSearchText}
             style={[
@@ -78,8 +82,8 @@ const SelectProvince: React.FC = () => {
           <AntDesign
             name="closecircle"
             size={24}
-            style={{position: 'absolute', right: 20}}
-            color={'black'}
+            style={{position: "absolute", right: 20}}
+            color={"black"}
             onPress={changeSearchInputVisibilty}
           />
         </View>
@@ -102,7 +106,7 @@ const SelectProvince: React.FC = () => {
           );
         }}
       />
-    </View>
+    </CustomView>
   );
 };
 
@@ -110,7 +114,7 @@ export default SelectProvince;
 
 const styles = StyleSheet.create({
   searchInput: {
-    textAlign: 'center',
+    textAlign: "center",
     height: LayoutDetail.windowHeight * 0.05,
     borderWidth: 1,
     marginHorizontal: 7,

@@ -1,4 +1,4 @@
-import Colors from './Colors';
+import Colors from "./Colors";
 
 const {light, dark} = Colors;
 
@@ -24,16 +24,18 @@ const Control: {[key: string]: {[key: string]: {light: string; dark: string}}} =
     generalText: {
       color: {light: light.white, dark: dark.white},
     },
-    generalIcons:{
-      color:{light:light.white,dark:dark.white}
+    generalIcons: {
+      color: {light: light.white, dark: dark.white},
     },
     SelectProvinceControl: {
       rippleColor: {light: light.green, dark: dark.softblue},
       BG: {light: light.black05, dark: dark.black05},
-      searchBarBG:{light:light.white,dark:dark.white},
-      searchBarText:{light:light.black,dark:dark.black}
+      searchBarBG: {light: light.white, dark: dark.white},
+      searchBarText: {light: light.black, dark: dark.black},
     },
-
+    AccordionCardControl: {
+      borderColor: {light: light.white, dark: dark.white},
+    },
   };
 
 export default Control;

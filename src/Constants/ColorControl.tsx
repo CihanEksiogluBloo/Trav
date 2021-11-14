@@ -36,6 +36,12 @@ const Control: {[key: string]: {[key: string]: {light: string; dark: string}}} =
     AccordionCardControl: {
       borderColor: {light: light.white, dark: dark.white},
     },
+    BottomBar:{
+      activeColor:{light:light.white,dark:dark.white},
+      inactiveColor:{light:light.brown,dark:dark.brown},
+      BG:{light:light.red,dark:dark.grey},
+      
+    }
   };
 
 export default Control;

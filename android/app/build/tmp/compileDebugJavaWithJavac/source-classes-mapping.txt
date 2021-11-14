@@ -1,7 +1,8 @@
 com/trav/MainActivity.java
  com.trav.MainActivity
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
+com/trav/MainApplication.java
+ com.trav.MainApplication
+ com.trav.MainApplication$1
 com/trav/ReactNativeFlipper.java
  com.trav.ReactNativeFlipper
  com.trav.ReactNativeFlipper$1
@@ -9,6 +10,5 @@ com/trav/ReactNativeFlipper.java
  com.trav.ReactNativeFlipper$2$1
 com/trav/BuildConfig.java
  com.trav.BuildConfig
-com/trav/MainApplication.java
- com.trav.MainApplication
- com.trav.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

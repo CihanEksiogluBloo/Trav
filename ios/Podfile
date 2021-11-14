@@ -13,6 +13,7 @@ target 'Trav' do
   )
 
   target 'TravTests' do
+    pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
     inherit! :complete
     # Pods for testing
   end

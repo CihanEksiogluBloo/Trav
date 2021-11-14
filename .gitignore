@@ -72,5 +72,17 @@ typings/
 # Serverless directories
 .serverless
 
+
+
 # FuseBox cache
 .fusebox/
+android/app/google-services.json
+
+#android
+build/
+.idea
+.gradle
+local.properties
+*.iml
+/android/
+

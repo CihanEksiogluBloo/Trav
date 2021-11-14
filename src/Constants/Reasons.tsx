@@ -52,12 +52,7 @@ export default [
       "Turks can come together for a single purpose despite all kinds of differences and differences of opinion.  It is possible to see the Turkish flag all over the country . About this situation",
   },
   {
-    header: "Politeness",
-    reason:
-      " If you are a man It wouldnt look nice if you talk to women directly. They are thought that you can disturb women. They dont prefer you to ask questions to young and single women. It seems more appropriate to ask questions to men.",
-  },
-  {
-    header: "Politeness",
+    header: "Equality",
     reason:
       " Turkey has been one of the country attaches importance to equality between men and women. Turkey is one of the countries that give women the right to vote and be elected for the first time. Women got this right earlier than women in Europe.",
   },

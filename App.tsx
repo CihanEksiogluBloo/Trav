@@ -13,30 +13,25 @@ import {SafeAreaView, StatusBar, StyleSheet} from "react-native";
 import {Colors} from "./src/Constants";
 import useColorScheme from "./src/Hooks/useColorScheme";
 import AppNavigator from "./src/Navigation/AppNavigator";
-import {store} from "./src/Store/store";
+import {store, persistor} from "./src/Store/store";
 import {Provider} from "react-redux";
-import firestore from "@react-native-firebase/firestore";
+import {PersistGate} from "redux-persist/integration/react";
 
 const App = () => {
   const colorScheme = useColorScheme();
   const isDark = colorScheme == "dark";
 
-  const usersCollection = firestore().collection("AdanaFood").onSnapshot(res => {
-    const doc = res.docs
-    console.log(doc);
-  });
-
-
-
   return (
     <Provider store={store}>
-      <SafeAreaView style={[styles.safeArea]}>
-        <StatusBar
-          barStyle={isDark ? "dark-content" : "light-content"}
-          backgroundColor={isDark ? Colors.dark.red : Colors.light.red}
-        />
-        <AppNavigator />
-      </SafeAreaView>
+      <PersistGate persistor={persistor} loading={null} >
+        <SafeAreaView style={[styles.safeArea]}>
+          <StatusBar
+            barStyle={isDark ? "dark-content" : "light-content"}
+            backgroundColor={isDark ? Colors.dark.red : Colors.light.red}
+          />
+          <AppNavigator />
+        </SafeAreaView>
+      </PersistGate>
     </Provider>
   );
 };

@@ -12,7 +12,7 @@ export type RootStackParamList = {
   Home: undefined;
   SelectProvinceStack: undefined;
   WhyScreen: undefined;
-  AfterSelect:undefined;
+  AfterSelect: undefined;
 };
 
 export type TabParamList = {
@@ -35,3 +35,40 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
   NativeStackScreenProps<RootStackParamList, Screen>;
 
 export type ProvinceObject = {province: string};
+export type FirestoreProvinceSnapType = {
+  _data: {
+    Adres: string;
+    Bilgi: string;
+    GorselUrl: string;
+    Kaynak: string;
+    Link: string;
+    Restoran: string;
+    Yemek: string;
+  };
+  _metadata: any;
+  _ref: any;
+  _exists: any;
+};
+
+export type StateArrayNames = "Food" | "Advice" | "Place";
+
+export type ProvinceAdvice = {
+  Advices: string;
+  GorselUrl: string;
+};
+export type ProvinceFood = {
+  Adres: string;
+  Bilgi: string;
+  GorselUrl: string;
+  Kaynak: string;
+  Link: string;
+  Restoran: string;
+  Yemek: string;
+};
+
+export type ProvincePlace = {
+  Adres: string;
+  GorselUrl: string;
+  Mekan: string;
+  Tarih: string;
+};

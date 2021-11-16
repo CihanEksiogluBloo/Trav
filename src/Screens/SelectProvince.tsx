@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {Dimensions, FlatList, StyleSheet, View} from "react-native";
 import {TextInput} from "react-native-gesture-handler";
+import {useDispatch, useSelector} from "react-redux";
 import SelectProvinceButton from "../Components/Button/SelectProvinceButton";
 import CustomView from "../Components/CustomView/CustomView";
 import SelectProvinceHeader from "../Components/Headers/SelectProvinceHeader";
@@ -9,15 +10,23 @@ import SearchInput from "../Components/Search/SearchInput";
 import {Control, LayoutDetail, Provinces} from "../Constants";
 import useColorScheme from "../Hooks/useColorScheme";
 import {ProvinceObject, RootStackScreenProps} from "../types";
+import * as ProvinceActions from "../Store/actions/province";
+import {ApplicationState} from "../Store/reducers";
 
 const regex = new RegExp(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g);
 
 const SelectProvince: React.FC<RootStackScreenProps<"SelectProvinceStack">> = ({
   navigation,
 }) => {
+  const dispatch = useDispatch();
   const {SelectProvinceControl} = Control;
   const colorScheme = useColorScheme();
   const [showSearchInput, setShowSearchInput] = useState<boolean>(false);
+
+  const {ProvinceOfLastData} = useSelector(
+    (state: ApplicationState) => state.province,
+  );
+
   const [filteredData, setFilteredData] = useState<{
     searchKey: string;
     filteredData: ProvinceObject[];
@@ -27,7 +36,12 @@ const SelectProvince: React.FC<RootStackScreenProps<"SelectProvinceStack">> = ({
   });
 
   const onPressProvince = (province: string) => {
-    navigation.navigate("AfterSelect")
+    if (ProvinceOfLastData == province) {
+      navigation.navigate("AfterSelect");
+      return;
+    }
+    dispatch(ProvinceActions.fetchProvinceData(province));
+    navigation.navigate("AfterSelect");
   };
 
   const onChangeSearchText = React.useCallback((text: string) => {

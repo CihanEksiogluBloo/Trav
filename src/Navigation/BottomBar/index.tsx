@@ -19,11 +19,23 @@ export const BottomTabs = () => {
   const {BottomBar} = Control;
   return (
     <Tab.Navigator
-      initialRouteName="FoodsScreen"
+      
+      initialRouteName="PlacesScreen"
       shifting={true}
       activeColor={BottomBar.activeColor[colorScheme]}
       inactiveColor={BottomBar.inactiveColor[colorScheme]}
       barStyle={{backgroundColor: BottomBar.BG[colorScheme]}}>
+      <Tab.Screen
+        name="PlacesScreen"
+        component={PlacesScreen}
+        options={{
+          title:"Places",
+          tabBarLabel: "Places",
+          tabBarIcon: ({color, focused}) => (
+            <MaterialCommunity name="fireplace-off" size={24} color={color} />
+          ),
+        }}
+      />
       <Tab.Screen
         name="FoodsScreen"
         component={FoodsScreen}
@@ -35,16 +47,6 @@ export const BottomTabs = () => {
         }}
       />
 
-      <Tab.Screen
-        name="PlacesScreen"
-        component={PlacesScreen}
-        options={{
-          tabBarLabel: "Places",
-          tabBarIcon: ({color, focused}) => (
-            <MaterialCommunity name="fireplace-off" size={24} color={color} />
-          ),
-        }}
-      />
       <Tab.Screen
         name="AdvicesScreen"
         component={AdvicesScreen}

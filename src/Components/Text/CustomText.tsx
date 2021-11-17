@@ -6,13 +6,14 @@ import useColorScheme from "../../Hooks/useColorScheme";
 type CustomTextType = {
   style?: TextStyle;
   children: string;
+  numberOfLines?: number
 };
 
-const CustomText: React.FC<CustomTextType> = ({children, style}) => {
+const CustomText: React.FC<CustomTextType> = ({children, style,numberOfLines}) => {
   const {generalText} = Control;
   const colorScheme = useColorScheme();
   return (
-    <Text style={[styles.text, {color: generalText.color[colorScheme]}, style]}>
+    <Text numberOfLines={numberOfLines} style={[styles.text, {color: generalText.color[colorScheme]}, style]}>
       {children}
     </Text>
   );

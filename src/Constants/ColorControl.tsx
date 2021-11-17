@@ -22,7 +22,7 @@ const Control: {[key: string]: {[key: string]: {light: string; dark: string}}} =
       contentBG: {light: light.red, dark: dark.black},
     },
     generalText: {
-      color: {light: light.white, dark: dark.white},
+      color: {light: light.text, dark: dark.text},
     },
     generalIcons: {
       color: {light: light.white, dark: dark.white},
@@ -36,12 +36,20 @@ const Control: {[key: string]: {[key: string]: {light: string; dark: string}}} =
     AccordionCardControl: {
       borderColor: {light: light.white, dark: dark.white},
     },
-    BottomBar:{
-      activeColor:{light:light.white,dark:dark.white},
-      inactiveColor:{light:light.brown,dark:dark.brown},
-      BG:{light:light.red,dark:dark.grey},
-      
-    }
+    BottomBar: {
+      activeColor: {light: light.white, dark: dark.white},
+      inactiveColor: {light: light.black, dark: dark.black},
+      BG: {light: light.red, dark: dark.grey},
+    },
+    FoodsSrc: {
+      statusBarColor: {light: light.red, dark: dark.red},
+      BG: {light: light.red, dark: dark.red},
+    },
+    PlacesSrc: {
+      statusBarColor: {light: light.red, dark: dark.red},
+      BG: {light: light.white, dark: dark.white},
+      rippleColor: {light: light.white, dark: dark.white},
+    },
   };
 
 export default Control;

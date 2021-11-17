@@ -1,7 +1,12 @@
+import {ProvinceFood, ProvinceAdvice, ProvincePlace} from "../../types";
 import {ProvinceActions} from "../actions/province";
 
 type ProvinceStateType = {
-  ProvinceData: {Food: []; Advice: []; Place: []};
+  ProvinceData: {
+    Food: ProvinceFood[];
+    Advice: ProvinceAdvice[];
+    Place: ProvincePlace[];
+  };
   ProvinceOfLastData: string;
 };
 

@@ -4,7 +4,7 @@ import {Control} from "../../Constants";
 import useColorScheme from "../../Hooks/useColorScheme";
 
 type CustomTextType = {
-  style?: TextStyle;
+  style?: TextStyle | TextStyle[];
   children: string;
   numberOfLines?: number
 };

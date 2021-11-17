@@ -6,8 +6,9 @@ import CustomView from "../../Components/CustomView/CustomView";
 import {Control} from "../../Constants";
 import useColorScheme from "../../Hooks/useColorScheme";
 import {ApplicationState} from "../../Store/reducers";
+import {FoodsStackScreenProps} from "../../types";
 
-const FoodsScreen = () => {
+const FoodsScreen: React.FC<FoodsStackScreenProps<"FoodsScreen">> = () => {
   const Foods = useSelector(
     (state: ApplicationState) => state.province.ProvinceData.Food,
   );

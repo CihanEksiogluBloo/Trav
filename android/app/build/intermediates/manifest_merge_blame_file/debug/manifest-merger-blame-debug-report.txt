@@ -11,209 +11,241 @@
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 11-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:5:5-77
 11-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:5:22-75
-12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:5-67
-12-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:22-64
-13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-13-->[com.facebook.flipper:flipper:0.99.0] C:\Users\Cihan\.gradle\caches\transforms-3\85722bbced5f75f7128f01e28eb86f9e\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.99.0] C:\Users\Cihan\.gradle\caches\transforms-3\85722bbced5f75f7128f01e28eb86f9e\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:22-73
-14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
-15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:5-79
-15-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:22-76
-16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:5-68
-16-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:22-65
-17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-17-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:5-110
-17-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:22-107
-18
-19    <application
-19-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:6:5-24:19
-20        android:name="com.trav.MainApplication"
-20-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:7:7-38
-21        android:allowBackup="false"
-21-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:11:7-34
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\9eba7cef7293f195e486b5c1bb290770\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
-23        android:debuggable="true"
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:9:7-41
-25        android:label="@string/app_name"
-25-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:8:7-39
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:7-52
-27        android:theme="@style/AppTheme"
-27-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:12:7-38
-28        android:usesCleartextTraffic="true" >
-28-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:8:9-44
-29        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-29-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:11:9-86
-29-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:11:19-83
-30        <activity
-30-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:13:7-23:18
-31            android:name="com.trav.MainActivity"
-31-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:14:9-37
-32            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-32-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:16:9-86
-33            android:label="@string/app_name"
-33-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:15:9-41
-34            android:launchMode="singleTask"
-34-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:17:9-40
-35            android:windowSoftInputMode="adjustResize" >
-35-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:18:9-51
-36            <intent-filter>
-36-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:19:9-22:25
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:20:13-65
-37-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:20:21-62
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:21:13-73
-39-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:21:23-70
-40            </intent-filter>
-41        </activity>
-42
-43        <meta-data
-43-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:36
-44            android:name="app_data_collection_default_enabled"
-44-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-63
-45            android:value="true" />
-45-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-33
-46
-47        <service
-47-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-18:19
-48            android:name="com.google.firebase.components.ComponentDiscoveryService"
-48-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:18-89
-49            android:directBootAware="true"
-49-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-50            android:exported="false" >
-50-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:19:13-37
-51            <meta-data
-51-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:85
-52                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
-52-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-120
-53                android:value="com.google.firebase.components.ComponentRegistrar" />
-53-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-82
-54            <meta-data
-54-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
-55                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-55-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
-56                android:value="com.google.firebase.components.ComponentRegistrar" />
-56-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
-57            <meta-data
-57-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:30:13-32:85
-58                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-58-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:31:17-139
-59                android:value="com.google.firebase.components.ComponentRegistrar" />
-59-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:32:17-82
-60            <meta-data
-60-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\8988d75e8fd616751377ffdb863f8c8b\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
-61                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-61-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\8988d75e8fd616751377ffdb863f8c8b\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
-62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\8988d75e8fd616751377ffdb863f8c8b\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
-63        </service>
-64
-65        <provider
-65-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-24:38
-66            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
-66-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-88
-67            android:authorities="com.trav.reactnativefirebaseappinitprovider"
-67-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-86
-68            android:exported="false"
-68-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-37
-69            android:initOrder="99" />
-69-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-35
-70        <provider
-70-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-71            android:name="com.google.firebase.provider.FirebaseInitProvider"
-71-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-72            android:authorities="com.trav.firebaseinitprovider"
-72-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-73            android:directBootAware="true"
-73-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-74            android:exported="false"
-74-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-75            android:initOrder="100" />
-75-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-76
-77        <meta-data
-77-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Cihan\.gradle\caches\transforms-3\37c0cada90f7270ece40784fcc5e19e2\transformed\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:11:9-13:43
-78            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
-78-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Cihan\.gradle\caches\transforms-3\37c0cada90f7270ece40784fcc5e19e2\transformed\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:12:13-84
-79            android:value="GlideModule" />
-79-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Cihan\.gradle\caches\transforms-3\37c0cada90f7270ece40784fcc5e19e2\transformed\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:13:13-40
-80
-81        <activity
-81-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
-82            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-82-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
-83            android:excludeFromRecents="true"
-83-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
-84            android:exported="false"
-84-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
-85            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-85-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
-86        <!--
-87            Service handling Google Sign-In user revocation. For apps that do not integrate with
-88            Google Sign-In, this service will never be started.
-89        -->
-90        <service
-90-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
-91            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-91-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
-92            android:exported="true"
-92-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
-93            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-93-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
-94            android:visibleToInstantApps="true" />
-94-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
-95
-96        <activity
-96-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
-97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-97-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
-98            android:exported="false"
-98-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
-99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-99-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
-100
-101        <receiver
-101-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:29:9-33:20
-102            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-102-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:30:13-85
-103            android:enabled="true"
-103-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:31:13-35
-104            android:exported="false" >
-104-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:32:13-37
-105        </receiver>
-106
+12
+13    <queries>
+13-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:2:3-7:15
+14        <intent>
+14-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:3:9-6:18
+15            <action android:name="android.intent.action.VIEW" />
+15-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:13-65
+15-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:21-62
+16
+17            <data android:scheme="https" />
+17-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:13-43
+17-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:19-41
+18        </intent>
+19    </queries>
+20
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:9:3-64
+21-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:9:20-62
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+22-->[com.facebook.flipper:flipper:0.99.0] C:\Users\Cihan\.gradle\caches\transforms-3\85722bbced5f75f7128f01e28eb86f9e\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:5-76
+22-->[com.facebook.flipper:flipper:0.99.0] C:\Users\Cihan\.gradle\caches\transforms-3\85722bbced5f75f7128f01e28eb86f9e\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:22-73
+23    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+24-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:5-79
+24-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:22-76
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:5-68
+25-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+26-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:5-110
+26-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:22-107
+27
+28    <application
+28-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:3-23:17
+29        android:name="com.trav.MainApplication"
+29-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:16-47
+30        android:allowBackup="false"
+30-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:162-189
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\9eba7cef7293f195e486b5c1bb290770\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:81-115
+34        android:label="@string/app_name"
+34-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:48-80
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:116-161
+36        android:theme="@style/AppTheme"
+36-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:10:190-221
+37        android:usesCleartextTraffic="true" >
+37-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:8:9-44
+38        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+38-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:11:9-86
+38-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:11:19-83
+39        <activity
+39-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:11:5-22:16
+40            android:name="com.trav.MainActivity"
+40-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:11:15-43
+41            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+41-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:11:77-154
+42            android:label="@string/app_name"
+42-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:11:44-76
+43            android:launchMode="singleTask"
+43-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:11:155-186
+44            android:windowSoftInputMode="adjustResize" >
+44-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:11:187-229
+45            <intent-filter>
+45-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:12:7-15:23
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:13:9-60
+46-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:13:17-58
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:14:9-68
+48-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:14:19-66
+49            </intent-filter>
+50            <intent-filter>
+50-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:16:7-21:23
+51                <action android:name="android.intent.action.VIEW" />
+51-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:13-65
+51-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:21-62
+52
+53                <category android:name="android.intent.category.DEFAULT" />
+53-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:18:9-67
+53-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:18:19-65
+54                <category android:name="android.intent.category.BROWSABLE" />
+54-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:19:9-69
+54-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:19:19-67
+55
+56                <data android:scheme="trav" />
+56-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:13-43
+56-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:19-41
+57            </intent-filter>
+58        </activity>
+59
+60        <meta-data
+60-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:36
+61            android:name="app_data_collection_default_enabled"
+61-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-63
+62            android:value="true" />
+62-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-33
+63
+64        <service
+64-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-18:19
+65            android:name="com.google.firebase.components.ComponentDiscoveryService"
+65-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:18-89
+66            android:directBootAware="true"
+66-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+67            android:exported="false" >
+67-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:19:13-37
+68            <meta-data
+68-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:85
+69                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+69-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-120
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-82
+71            <meta-data
+71-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
+72                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+72-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-firestore:24.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\4c17e28a9a5eb0b021cff3a3d338e75c\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
+74            <meta-data
+74-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:30:13-32:85
+75                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+75-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:31:17-139
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\11f71cd6a019fa6b4bab56f8a3fb64fc\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:32:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\8988d75e8fd616751377ffdb863f8c8b\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+78                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+78-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\8988d75e8fd616751377ffdb863f8c8b\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\8988d75e8fd616751377ffdb863f8c8b\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+80        </service>
+81
+82        <provider
+82-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-24:38
+83            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+83-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-88
+84            android:authorities="com.trav.reactnativefirebaseappinitprovider"
+84-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-86
+85            android:exported="false"
+85-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-37
+86            android:initOrder="99" />
+86-->[:react-native-firebase_app] C:\Users\Cihan\Desktop\Bussiness\Trav\node_modules\@react-native-firebase\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-35
+87        <provider
+87-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+88            android:name="com.google.firebase.provider.FirebaseInitProvider"
+88-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+89            android:authorities="com.trav.firebaseinitprovider"
+89-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+90            android:directBootAware="true"
+90-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+91            android:exported="false"
+91-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+92            android:initOrder="100" />
+92-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\bdacc25ea80059c09049f1581cb7a011\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+93
+94        <meta-data
+94-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Cihan\.gradle\caches\transforms-3\37c0cada90f7270ece40784fcc5e19e2\transformed\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:11:9-13:43
+95            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+95-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Cihan\.gradle\caches\transforms-3\37c0cada90f7270ece40784fcc5e19e2\transformed\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:12:13-84
+96            android:value="GlideModule" />
+96-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] C:\Users\Cihan\.gradle\caches\transforms-3\37c0cada90f7270ece40784fcc5e19e2\transformed\jetified-okhttp3-integration-4.12.0\AndroidManifest.xml:13:13-40
+97
+98        <activity
+98-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
+99            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+99-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
+100            android:excludeFromRecents="true"
+100-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
+103        <!--
+104            Service handling Google Sign-In user revocation. For apps that do not integrate with
+105            Google Sign-In, this service will never be started.
+106        -->
 107        <service
-107-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:35:9-38:40
-108            android:name="com.google.android.gms.measurement.AppMeasurementService"
-108-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:36:13-84
-109            android:enabled="true"
-109-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:37:13-35
-110            android:exported="false" />
-110-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:38:13-37
-111        <service
-111-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:39:9-43:72
-112            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-112-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
-113            android:enabled="true"
-113-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:41:13-35
-114            android:exported="false"
-114-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:42:13-37
-115            android:permission="android.permission.BIND_JOB_SERVICE" />
-115-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
-116
-117        <meta-data
-117-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\291ee97d94c34b3b92343e3d987c6580\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
-118            android:name="com.google.android.gms.version"
-118-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\291ee97d94c34b3b92343e3d987c6580\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
-119            android:value="@integer/google_play_services_version" />
-119-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\291ee97d94c34b3b92343e3d987c6580\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
-120    </application>
-121
-122</manifest>
+107-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
+108            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+108-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
+109            android:exported="true"
+109-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
+110            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+110-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
+111            android:visibleToInstantApps="true" />
+111-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\Cihan\.gradle\caches\transforms-3\d2eeb25f3ac5cfe84272088df801bfd5\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
+112
+113        <activity
+113-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+114-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+115            android:exported="false"
+115-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\69e3ce336582193956a6d722255aa138\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+117
+118        <receiver
+118-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:29:9-33:20
+119            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+119-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:30:13-85
+120            android:enabled="true"
+120-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:31:13-35
+121            android:exported="false" >
+121-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:32:13-37
+122        </receiver>
+123
+124        <service
+124-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:35:9-38:40
+125            android:name="com.google.android.gms.measurement.AppMeasurementService"
+125-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:36:13-84
+126            android:enabled="true"
+126-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:37:13-35
+127            android:exported="false" />
+127-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:38:13-37
+128        <service
+128-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:39:9-43:72
+129            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+129-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
+130            android:enabled="true"
+130-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:41:13-35
+131            android:exported="false"
+131-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:42:13-37
+132            android:permission="android.permission.BIND_JOB_SERVICE" />
+132-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Cihan\.gradle\caches\transforms-3\2aaffee296c074a60478998d5e2a0b4b\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
+133
+134        <meta-data
+134-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\291ee97d94c34b3b92343e3d987c6580\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
+135            android:name="com.google.android.gms.version"
+135-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\291ee97d94c34b3b92343e3d987c6580\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
+136            android:value="@integer/google_play_services_version" />
+136-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\Cihan\.gradle\caches\transforms-3\291ee97d94c34b3b92343e3d987c6580\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
+137    </application>
+138
+139</manifest>

@@ -23,9 +23,12 @@ const Control: {[key: string]: {[key: string]: {light: string; dark: string}}} =
     },
     generalText: {
       color: {light: light.text, dark: dark.text},
+      haveBgColor: {light: light.white, dark: dark.white},
+      link: {light: light.blue, dark: dark.blue},
     },
     generalIcons: {
       color: {light: light.white, dark: dark.white},
+      haveBgColor: {light: light.white, dark: dark.white},
     },
     SelectProvinceControl: {
       rippleColor: {light: light.green, dark: dark.softblue},
@@ -48,7 +51,7 @@ const Control: {[key: string]: {[key: string]: {light: string; dark: string}}} =
     PlacesSrc: {
       statusBarColor: {light: light.red, dark: dark.red},
       BG: {light: light.white, dark: dark.white},
-      rippleColor: {light: light.white, dark: dark.white},
+      rippleColor: {light: light.red, dark: dark.white},
     },
   };
 

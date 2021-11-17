@@ -1,7 +1,7 @@
 import React from "react";
 import {createMaterialBottomTabNavigator} from "@react-navigation/material-bottom-tabs";
 import {TabParamList} from "../../types";
-import AdvicesScreen from "../../Screens/AfterSelect/AdvicesScreen";
+import AdvicesScreen from "../../Screens/AfterSelect/AdvicesDetailScreen";
 import FoodsScreen from "../../Screens/AfterSelect/FoodsScreen";
 import PlacesScreen from "../../Screens/AfterSelect/PlacesScreen";
 import useColorScheme from "../../Hooks/useColorScheme";
@@ -11,6 +11,8 @@ import {
   Meterial,
   MaterialCommunity,
 } from "../../Components/Icons/Icon";
+import {PlacesScreenNavigator} from "../Places";
+import {FoodsScreenNavigator} from "../Foods";
 
 const Tab = createMaterialBottomTabNavigator<TabParamList>();
 
@@ -19,17 +21,16 @@ export const BottomTabs = () => {
   const {BottomBar} = Control;
   return (
     <Tab.Navigator
-      
-      initialRouteName="PlacesScreen"
+      initialRouteName="PlacesStack"
       shifting={true}
       activeColor={BottomBar.activeColor[colorScheme]}
       inactiveColor={BottomBar.inactiveColor[colorScheme]}
       barStyle={{backgroundColor: BottomBar.BG[colorScheme]}}>
       <Tab.Screen
-        name="PlacesScreen"
-        component={PlacesScreen}
+        name="PlacesStack"
+        component={PlacesScreenNavigator}
         options={{
-          title:"Places",
+          title: "Places",
           tabBarLabel: "Places",
           tabBarIcon: ({color, focused}) => (
             <MaterialCommunity name="fireplace-off" size={24} color={color} />
@@ -37,8 +38,8 @@ export const BottomTabs = () => {
         }}
       />
       <Tab.Screen
-        name="FoodsScreen"
-        component={FoodsScreen}
+        name="FoodsStack"
+        component={FoodsScreenNavigator}
         options={{
           tabBarLabel: "Foods",
           tabBarIcon: ({color, focused}) => (

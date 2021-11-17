@@ -6,12 +6,13 @@ import FastImage from "react-native-fast-image";
 import useColorScheme from "../../../Hooks/useColorScheme";
 import CustomText from "../../Text/CustomText";
 import HomeButton from "../../Button/HomeButton";
-import {MaterialCommunity} from "../../Icons/Icon";
+import {AntDesign, MaterialCommunity} from "../../Icons/Icon";
 import CustomView from "../../CustomView/CustomView";
+import ContentButton from "../../Button/ContentButton";
 
 type PlacesContainerType = {
   item: ProvincePlace;
-  onPress?: () => void;
+  onPress?: (place: ProvincePlace) => void;
   onShowMaps: () => void;
   onShowDetail: () => void;
 };
@@ -29,7 +30,7 @@ const PlacesContainer: React.FC<PlacesContainerType> = ({
   return (
     <ContainerWrapper
       style={styles.container}
-      onPress={onPress}
+      onPress={() => onPress && onPress(item)}
       android_ripple={{color: PlacesSrc.rippleColor[colorScheme]}}>
       <CustomText style={styles.header}>{item.Mekan}</CustomText>
       <View style={styles.mainCont}>
@@ -50,15 +51,27 @@ const PlacesContainer: React.FC<PlacesContainerType> = ({
               {item.Tarih}
             </CustomText>
           </View>
-            <Pressable style={{flexDirection:"row",justifyContent:"center",alignItems:"center",backgroundColor:PlacesSrc.statusBarColor[colorScheme],padding:5,width:"90%",borderRadius:5}}>
-              <CustomText>
-                Show ON Maps
-              </CustomText>
-              <MaterialCommunity name="map-marker" size={24} color="black" />
-            </Pressable>
-
+          <ContentButton
+            title="Show On Maps"
+            color={PlacesSrc.statusBarColor[colorScheme]}>
+            <MaterialCommunity
+              name="map-marker"
+              size={24}
+              color={generalIcons.color[colorScheme]}
+            />
+          </ContentButton>
+          <ContentButton
+            title="Show Detail"
+            color={PlacesSrc.statusBarColor[colorScheme]}>
+            <AntDesign
+              name="rightcircle"
+              size={20}
+              color={generalIcons.color[colorScheme]}
+            />
+          </ContentButton>
         </View>
       </View>
+      <CustomText style={{color: "black"}}>asds</CustomText>
     </ContainerWrapper>
   );
 };
@@ -73,7 +86,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   mainCont: {
-    height: "100%",
+    height: "95%",
     width: "100%",
     flexDirection: "row",
   },

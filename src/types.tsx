@@ -14,11 +14,33 @@ export type RootStackParamList = {
   WhyScreen: undefined;
   AfterSelect: undefined;
 };
+export type PlacesStackParamList = {
+  PlacesScreen: undefined;
+  PlacesDetail: PlacesDetailParams;
+};
+export type FoodsStackParamList = {
+  FoodsScreen: undefined;
+  FoodsDetail: FoodsDetailParams;
+};
+export type AdvicesStackParamList = {
+  AdvicesScreen: undefined;
+  AdvicesDetail: AdvicesDetailParams;
+};
+
+type PlacesDetailParams = {
+  place: ProvincePlace;
+};
+type FoodsDetailParams = {
+  food: ProvinceFood;
+};
+type AdvicesDetailParams = {
+  advice: ProvinceAdvice;
+};
 
 export type TabParamList = {
   AdvicesScreen: undefined;
-  FoodsScreen: undefined;
-  PlacesScreen: undefined;
+  FoodsStack: undefined;
+  PlacesStack: undefined;
 };
 
 export type ProvinceStackParamList = {
@@ -34,7 +56,18 @@ export type RootTabScreenProps<Screen extends keyof TabParamList> =
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
   NativeStackScreenProps<RootStackParamList, Screen>;
 
+export type PlacesStackScreenProps<Screen extends keyof PlacesStackParamList> =
+  NativeStackScreenProps<PlacesStackParamList, Screen>;
+
+export type FoodsStackScreenProps<Screen extends keyof FoodsStackParamList> =
+  NativeStackScreenProps<FoodsStackParamList, Screen>;
+
+export type AdvicesStackScreenProps<
+  Screen extends keyof AdvicesStackParamList,
+> = NativeStackScreenProps<AdvicesStackParamList, Screen>;
+
 export type ProvinceObject = {province: string};
+
 export type FirestoreProvinceSnapType = {
   _data: {
     Adres: string;

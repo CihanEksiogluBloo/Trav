@@ -1,15 +1,16 @@
 import React, {useCallback} from "react";
 import {StyleSheet, Linking, Pressable} from "react-native";
-import { Control } from "../../Constants";
+import {Control} from "../../Constants";
 import useColorScheme from "../../Hooks/useColorScheme";
 import CustomText from "../Text/CustomText";
 
-type GeneralSourceType = {};
+type GeneralSourceType = {
+  url: string;
+};
 
-const GeneralSource: React.FC<GeneralSourceType> = ({}) => {
-  const url = "https://www.kulturportali.gov.tr";
-  const {generalText} = Control
-  const colorScheme = useColorScheme()
+const GeneralSource: React.FC<GeneralSourceType> = ({url}) => {
+  const {generalText} = Control;
+  const colorScheme = useColorScheme();
   const handlePress = useCallback(async () => {
     // Checking if the link is supported for links with custom URL scheme.
     await Linking.openURL(url);
@@ -28,8 +29,17 @@ const GeneralSource: React.FC<GeneralSourceType> = ({}) => {
 
   return (
     <Pressable style={styles.container} onPress={handlePress}>
-      <CustomText style={styles.header}>General Source:</CustomText>
-      <CustomText style={[styles.link,{color:generalText.link[colorScheme],borderColor:generalText.link[colorScheme]}]}>{url}</CustomText>
+      <CustomText style={styles.header}>Source: </CustomText>
+      <CustomText
+        style={[
+          styles.link,
+          {
+            color: generalText.link[colorScheme],
+            textDecorationLine:"underline"
+          },
+        ]}>
+        {url}
+      </CustomText>
     </Pressable>
   );
 };
@@ -41,14 +51,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom:20,
-
+    marginBottom: 20,
   },
   header: {
     fontWeight: "bold",
   },
-  link:{
-      borderBottomWidth:1,
+  link: {
 
-  }
+  },
 });

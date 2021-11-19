@@ -9,17 +9,19 @@ type ContentButtonType = {
   title: string;
   color: ColorValue;
   children: React.ReactNode;
+  onPress: () => void;
 };
 
 const ContentButton: React.FC<ContentButtonType> = ({
   color,
   title,
   children,
+  onPress
 }) => {
   const {generalText} = Control;
   const colorScheme = useColorScheme();
   return (
-    <Pressable style={[styles.container, {backgroundColor: color}]}>
+    <Pressable style={[styles.container, {backgroundColor: color}]} onPress={onPress}>
       <CustomText
         style={[styles.text, {color: generalText.haveBgColor[colorScheme]}]}>
         {title}

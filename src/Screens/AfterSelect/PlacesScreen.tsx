@@ -15,6 +15,7 @@ import {Control, LayoutDetail} from "../../Constants";
 import useColorScheme from "../../Hooks/useColorScheme";
 import {ApplicationState} from "../../Store/reducers";
 import {PlacesStackScreenProps, ProvincePlace} from "../../types";
+import {GoogleMapsUrl} from "../../utils/links";
 
 const PlacesScreen: React.FC<PlacesStackScreenProps<"PlacesScreen">> = ({
   navigation,
@@ -28,8 +29,11 @@ const PlacesScreen: React.FC<PlacesStackScreenProps<"PlacesScreen">> = ({
   const onPressPlace = (place: ProvincePlace) => {
     navigation.navigate("PlacesDetail", {place});
   };
-  const onShowDetail = () => {};
-  const onShowMaps = () => {};
+
+  const onShowMaps = (Adres: string) => {
+    const returnedLink = GoogleMapsUrl(Adres);
+    Linking.openURL(returnedLink);
+  };
 
   return (
     <View
@@ -48,13 +52,13 @@ const PlacesScreen: React.FC<PlacesStackScreenProps<"PlacesScreen">> = ({
           backgroundColor: PlacesSrc.statusBarColor[colorScheme],
         }}
         keyExtractor={(_, index) => index.toString()}
-        ListFooterComponent={() => <GeneralSource />}
+        ListFooterComponent={() => <GeneralSource url={"https://www.kulturportali.gov.tr"} />}
         renderItem={({item}) => {
           return (
             <PlacesContainer
               item={item}
               onPress={onPressPlace}
-              onShowDetail={onShowDetail}
+              onShowDetail={onPressPlace}
               onShowMaps={onShowMaps}
             />
           );

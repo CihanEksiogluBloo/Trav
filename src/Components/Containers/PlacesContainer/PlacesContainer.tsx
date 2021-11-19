@@ -13,8 +13,8 @@ import ContentButton from "../../Button/ContentButton";
 type PlacesContainerType = {
   item: ProvincePlace;
   onPress?: (place: ProvincePlace) => void;
-  onShowMaps: () => void;
-  onShowDetail: () => void;
+  onShowMaps: (Adres:string) => void;
+  onShowDetail: (place: ProvincePlace) => void;
 };
 
 const PlacesContainer: React.FC<PlacesContainerType> = ({
@@ -26,6 +26,8 @@ const PlacesContainer: React.FC<PlacesContainerType> = ({
   const ContainerWrapper = onPress ? Pressable : View;
   const colorScheme = useColorScheme();
   const {PlacesSrc, generalText, generalIcons} = Control;
+
+  
 
   return (
     <ContainerWrapper
@@ -53,6 +55,7 @@ const PlacesContainer: React.FC<PlacesContainerType> = ({
           </View>
           <ContentButton
             title="Show On Maps"
+            onPress={() => onShowMaps(item.Adres)}
             color={PlacesSrc.statusBarColor[colorScheme]}>
             <MaterialCommunity
               name="map-marker"
@@ -62,7 +65,9 @@ const PlacesContainer: React.FC<PlacesContainerType> = ({
           </ContentButton>
           <ContentButton
             title="Show Detail"
-            color={PlacesSrc.statusBarColor[colorScheme]}>
+            color={PlacesSrc.statusBarColor[colorScheme]}
+            onPress={() => onShowDetail(item)}
+            >
             <AntDesign
               name="rightcircle"
               size={20}

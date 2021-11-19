@@ -104,4 +104,5 @@ export type ProvincePlace = {
   GorselUrl: string;
   Mekan: string;
   Tarih: string;
+  link:string;
 };

@@ -13,21 +13,21 @@
 11-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\debug\AndroidManifest.xml:5:22-75
 12
 13    <queries>
-13-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:2:3-7:15
+13-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:2:3-7:13
 14        <intent>
-14-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:3:9-6:18
+14-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:3:5-6:14
 15            <action android:name="android.intent.action.VIEW" />
-15-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:13-65
-15-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:21-62
+15-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:7-59
+15-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:15-56
 16
 17            <data android:scheme="https" />
-17-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:13-43
-17-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:19-41
+17-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:7-38
+17-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:13-35
 18        </intent>
 19    </queries>
 20
 21    <uses-permission android:name="android.permission.INTERNET" />
-21-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:9:3-64
+21-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:9:3-65
 21-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:9:20-62
 22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 22-->[com.facebook.flipper:flipper:0.99.0] C:\Users\Cihan\.gradle\caches\transforms-3\85722bbced5f75f7128f01e28eb86f9e\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:5-76
@@ -80,29 +80,29 @@
 45            <intent-filter>
 45-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:12:7-15:23
 46                <action android:name="android.intent.action.MAIN" />
-46-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:13:9-60
+46-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:13:9-61
 46-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:13:17-58
 47
 48                <category android:name="android.intent.category.LAUNCHER" />
-48-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:14:9-68
+48-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:14:9-69
 48-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:14:19-66
 49            </intent-filter>
 50            <intent-filter>
 50-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:16:7-21:23
 51                <action android:name="android.intent.action.VIEW" />
-51-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:13-65
-51-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:21-62
+51-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:7-59
+51-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:4:15-56
 52
 53                <category android:name="android.intent.category.DEFAULT" />
-53-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:18:9-67
+53-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:18:9-68
 53-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:18:19-65
 54                <category android:name="android.intent.category.BROWSABLE" />
-54-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:19:9-69
+54-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:19:9-70
 54-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:19:19-67
 55
 56                <data android:scheme="trav" />
-56-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:13-43
-56-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:19-41
+56-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:7-38
+56-->C:\Users\Cihan\Desktop\Bussiness\Trav\android\app\src\main\AndroidManifest.xml:5:13-35
 57            </intent-filter>
 58        </activity>
 59

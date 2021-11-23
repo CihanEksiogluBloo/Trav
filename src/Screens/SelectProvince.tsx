@@ -11,6 +11,7 @@ import {Control, LayoutDetail, Provinces} from "../Constants";
 import useColorScheme from "../Hooks/useColorScheme";
 import {ProvinceObject, RootStackScreenProps} from "../types";
 import * as ProvinceActions from "../Store/actions/province";
+import * as UIActions from "../Store/actions/uiControl";
 import {ApplicationState} from "../Store/reducers";
 
 const regex = new RegExp(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g);
@@ -19,9 +20,10 @@ const SelectProvince: React.FC<RootStackScreenProps<"SelectProvinceStack">> = ({
   navigation,
 }) => {
   const dispatch = useDispatch();
-  const {SelectProvinceControl} = Control;
+  const {SelectProvinceControl, statusBar} = Control;
   const colorScheme = useColorScheme();
   const [showSearchInput, setShowSearchInput] = useState<boolean>(false);
+  const navBarColor = statusBar.defaultNavigationBarColor[colorScheme];
 
   const {ProvinceOfLastData} = useSelector(
     (state: ApplicationState) => state.province,

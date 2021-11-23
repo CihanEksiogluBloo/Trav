@@ -16,6 +16,10 @@ const Control: {
     headerText: {light: light.white, dark: dark.white},
     contentBG: {light: light.red, dark: dark.black},
   },
+  statusBar: {
+    defaultColor: {light: light.red, dark: dark.red},
+    defaultNavigationBarColor: {light: light.white, dark: dark.white},
+  },
   customView: {
     gradientOne: {light: light.red, dark: dark.red},
     gradientTwo: {light: light.blue, dark: dark.blue},
@@ -45,10 +49,13 @@ const Control: {
     activeColor: {light: light.white, dark: dark.white},
     inactiveColor: {light: light.black, dark: dark.black},
     BG: {light: light.red, dark: dark.grey},
+    FoodBarColor: {light: light.blue, dark: dark.blue},
+    PlacesBarColor: {light: light.red, dark: dark.red},
+    AdvicesBarColor: {light: light.purple, dark: dark.purple},
   },
   FoodsSrc: {
-    statusBarColor: {light: light.red, dark: dark.red},
-    BG: {light: light.red, dark: dark.red},
+    statusBarColor: {light: light.blue, dark: dark.blue},
+    BG: {light: light.white, dark: dark.white},
   },
   PlacesSrc: {
     statusBarColor: {light: light.red, dark: dark.red},

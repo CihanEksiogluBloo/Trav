@@ -6,13 +6,26 @@ import GeneralSource from "../../Components/BottomComponents/GeneralSource";
 import CustomText from "../../Components/Text/CustomText";
 import {Control, FontSettings, LayoutDetail} from "../../Constants";
 import useColorScheme from "../../Hooks/useColorScheme";
+import {useDispatch} from "react-redux";
+import * as UIActions from "../../Store/actions/uiControl";
 
 const PlacesDetailScreen: React.FC<PlacesStackScreenProps<"PlacesDetail">> = ({
   route,
+  navigation,
 }) => {
+  const dispatch = useDispatch();
   const {place} = route.params;
-  const {PlacesDetailSrc} = Control;
+  const {PlacesDetailSrc, PlacesSrc} = Control;
   const colorScheme = useColorScheme();
+  const statusColor = PlacesSrc.statusBarColor[colorScheme];
+
+  React.useEffect(() => {
+    const focusFunction = () => {
+      dispatch(UIActions.changeStatusColor(statusColor, statusColor));
+    };
+    const focused = navigation.addListener("focus", focusFunction);
+    return focused;
+  }, []);
 
   return (
     <ScrollView

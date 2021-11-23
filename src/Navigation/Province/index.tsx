@@ -16,7 +16,6 @@ export const ProvinceStackNav = () => {
         headerShown: false,
         animation: 'slide_from_right',
         gestureEnabled: true,
-        contentStyle: {backgroundColor:ProvinceStackNavColor.contentBG[useColor]},
       }}
       initialRouteName="SelectProvince">
       <ProvinceStack.Screen name="SelectProvince" component={SelectProvince} />

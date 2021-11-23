@@ -19,7 +19,6 @@ export function PlacesScreenNavigator() {
         headerTintColor: header.headerText[colorScheme],
         headerTitleAlign: "center",
         animation: "slide_from_right",
-        
       }}>
       <Stack.Screen name="PlacesScreen" component={PlacesScreen} />
       <Stack.Screen

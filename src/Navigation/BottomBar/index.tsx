@@ -24,6 +24,7 @@ export const BottomTabs = () => {
       initialRouteName="PlacesStack"
       shifting={true}
       activeColor={BottomBar.activeColor[colorScheme]}
+      
       inactiveColor={BottomBar.inactiveColor[colorScheme]}
       barStyle={{backgroundColor: BottomBar.BG[colorScheme]}}>
       <Tab.Screen
@@ -32,6 +33,8 @@ export const BottomTabs = () => {
         options={{
           title: "Places",
           tabBarLabel: "Places",
+          
+          tabBarColor: BottomBar.PlacesBarColor[colorScheme],
           tabBarIcon: ({color, focused}) => (
             <MaterialCommunity name="fireplace-off" size={24} color={color} />
           ),
@@ -42,6 +45,7 @@ export const BottomTabs = () => {
         component={FoodsScreenNavigator}
         options={{
           tabBarLabel: "Foods",
+          tabBarColor: BottomBar.FoodBarColor[colorScheme],
           tabBarIcon: ({color, focused}) => (
             <Meterial name="food-bank" size={24} color={color} />
           ),
@@ -53,6 +57,7 @@ export const BottomTabs = () => {
         component={AdvicesScreen}
         options={{
           tabBarLabel: "Advices",
+          tabBarColor: BottomBar.AdvicesBarColor[colorScheme],
           tabBarIcon: ({color, focused}) => (
             <MaterialCommunity
               name="account-question"

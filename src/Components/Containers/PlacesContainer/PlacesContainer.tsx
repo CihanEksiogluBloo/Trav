@@ -13,7 +13,7 @@ import ContentButton from "../../Button/ContentButton";
 type PlacesContainerType = {
   item: ProvincePlace;
   onPress?: (place: ProvincePlace) => void;
-  onShowMaps: (Adres:string) => void;
+  onShowMaps: (Adres: string) => void;
   onShowDetail: (place: ProvincePlace) => void;
 };
 
@@ -26,8 +26,6 @@ const PlacesContainer: React.FC<PlacesContainerType> = ({
   const ContainerWrapper = onPress ? Pressable : View;
   const colorScheme = useColorScheme();
   const {PlacesSrc, generalText, generalIcons} = Control;
-
-  
 
   return (
     <ContainerWrapper
@@ -66,8 +64,7 @@ const PlacesContainer: React.FC<PlacesContainerType> = ({
           <ContentButton
             title="Show Detail"
             color={PlacesSrc.statusBarColor[colorScheme]}
-            onPress={() => onShowDetail(item)}
-            >
+            onPress={() => onShowDetail(item)}>
             <AntDesign
               name="rightcircle"
               size={20}

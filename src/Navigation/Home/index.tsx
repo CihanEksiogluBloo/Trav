@@ -15,7 +15,6 @@ export const HomeStackNav = () => {
   const {header} = Control;
   return (
     <HomeStack.Navigator
-      defaultScreenOptions={{}}
       screenOptions={{
         animation: "slide_from_right",
         animationTypeForReplace: "pop",
@@ -24,7 +23,6 @@ export const HomeStackNav = () => {
         headerTitleAlign: "center",
         headerTintColor: header.headerText[colorScheme],
         presentation: "modal",
-        contentStyle: {backgroundColor: header.contentBG[colorScheme]},
       }}
       initialRouteName="Home">
       <HomeStack.Screen name="Home" component={HomeScreen} />

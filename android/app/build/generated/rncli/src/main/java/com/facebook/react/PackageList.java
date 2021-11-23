@@ -21,6 +21,8 @@ import io.invertase.firebase.firestore.ReactNativeFirebaseFirestorePackage;
 import com.dylanvann.fastimage.FastImageViewPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-navigation-bar-color
+import com.thebylito.navigationbarcolor.NavigationBarColorPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
@@ -79,6 +81,7 @@ public class PackageList {
       new ReactNativeFirebaseFirestorePackage(),
       new FastImageViewPackage(),
       new RNGestureHandlerPackage(),
+      new NavigationBarColorPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new SvgPackage(),

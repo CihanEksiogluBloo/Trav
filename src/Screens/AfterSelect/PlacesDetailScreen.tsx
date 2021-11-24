@@ -8,6 +8,7 @@ import {Control, FontSettings, LayoutDetail} from "../../Constants";
 import useColorScheme from "../../Hooks/useColorScheme";
 import {useDispatch} from "react-redux";
 import * as UIActions from "../../Store/actions/uiControl";
+import useChangeNavigationBar from "../../Hooks/useChangeNavigationBar"
 
 const PlacesDetailScreen: React.FC<PlacesStackScreenProps<"PlacesDetail">> = ({
   route,

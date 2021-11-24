@@ -18,10 +18,13 @@ export default (
 ): UIControlStateType => {
   switch (action.type) {
     case "CHANGE_STATUS_COLOR":
+      const navColor = action.payload.navigationBarColor
+        ? action.payload.navigationBarColor
+        : state.NavigationBarColor;
       return {
         ...state,
         StatusBarColor: action.payload.StatusBarColor,
-        NavigationBarColor: action.payload.navigationBarColor,
+        NavigationBarColor: navColor,
       };
     default: {
       return state;

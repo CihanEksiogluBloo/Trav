@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Dimensions, FlatList, StyleSheet, View} from "react-native";
+import {Dimensions, FlatList, Platform, StyleSheet, View} from "react-native";
 import {TextInput} from "react-native-gesture-handler";
 import {useDispatch, useSelector} from "react-redux";
 import SelectProvinceButton from "../Components/Button/SelectProvinceButton";
@@ -13,6 +13,7 @@ import {ProvinceObject, RootStackScreenProps} from "../types";
 import * as ProvinceActions from "../Store/actions/province";
 import * as UIActions from "../Store/actions/uiControl";
 import {ApplicationState} from "../Store/reducers";
+import useChangeNavigationBar from "../Hooks/useChangeNavigationBar";
 
 const regex = new RegExp(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g);
 
@@ -20,10 +21,11 @@ const SelectProvince: React.FC<RootStackScreenProps<"SelectProvinceStack">> = ({
   navigation,
 }) => {
   const dispatch = useDispatch();
-  const {SelectProvinceControl, statusBar} = Control;
+  const {SelectProvinceControl, statusBar, PlacesSrc} = Control;
   const colorScheme = useColorScheme();
   const [showSearchInput, setShowSearchInput] = useState<boolean>(false);
   const navBarColor = statusBar.defaultNavigationBarColor[colorScheme];
+  const isPlatformAndroid = Platform.OS == "android";
 
   const {ProvinceOfLastData} = useSelector(
     (state: ApplicationState) => state.province,
@@ -37,13 +39,25 @@ const SelectProvince: React.FC<RootStackScreenProps<"SelectProvinceStack">> = ({
     filteredData: [],
   });
 
-  const onPressProvince = (province: string) => {
+  const navigateAfterSelect = (province: string) => {
     if (ProvinceOfLastData == province) {
       navigation.navigate("AfterSelect");
       return;
     }
     dispatch(ProvinceActions.fetchProvinceData(province));
     navigation.navigate("AfterSelect");
+  };
+
+  const onPressProvince = (province: string) => {
+    if (isPlatformAndroid) {
+      useChangeNavigationBar({
+        color: PlacesSrc.statusBarColor[colorScheme],
+        colorScheme,
+      });
+      navigateAfterSelect(province);
+    } else {
+      navigateAfterSelect(province);
+    }
   };
 
   const onChangeSearchText = React.useCallback((text: string) => {

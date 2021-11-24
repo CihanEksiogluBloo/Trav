@@ -41,6 +41,7 @@ const Control: {
     BG: {light: light.black05, dark: dark.black05},
     searchBarBG: {light: light.white, dark: dark.white},
     searchBarText: {light: light.black, dark: dark.black},
+    navBarColor : {light:light.blue,dark:dark.blue}
   },
   AccordionCardControl: {
     borderColor: {light: light.white, dark: dark.white},
@@ -66,6 +67,12 @@ const Control: {
     headerBG: {light: light.red, dark: dark.red},
     headerColor: {light: light.red, dark: dark.red},
   },
+  WhySrc:{
+    navBarColor : {light:light.blue,dark:dark.blue}
+  },
+  AdvicesSrc:{
+    statusBarColor : {light:light.purple,dark:dark.purple}
+  }
 };
 
 export default Control;

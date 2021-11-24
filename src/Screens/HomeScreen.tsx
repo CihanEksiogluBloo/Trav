@@ -1,33 +1,53 @@
-import React, {Fragment, useEffect} from "react";
+import React, {Fragment, useEffect, useLayoutEffect} from "react";
 import {
   ImageBackground,
   StyleSheet,
   Text,
   View,
   SafeAreaView,
+  Platform,
 } from "react-native";
 import HomeButton from "../Components/Button/HomeButton";
 import {AntDesign, MaterialCommunity} from "../Components/Icons/Icon";
 import Colors from "../Constants/Colors";
 import {RootStackScreenProps} from "../types";
 import useColorScheme from "../Hooks/useColorScheme";
-import {Control, LayoutDetail, Provinces} from "../Constants";
+import {Control, LayoutDetail} from "../Constants";
+import useChangeNavigationBar from "../Hooks/useChangeNavigationBar";
+import {useIsFocused} from "@react-navigation/native";
 
 const dimentions = LayoutDetail;
 
 const HomeScreen: React.FC<RootStackScreenProps<"Home">> = ({navigation}) => {
-  function capitalizeFirstLetter(string: string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
   const colorScheme = useColorScheme();
-  const {home} = Control;
+  const isAndroid = Platform.OS == "android";
+  const {home, SelectProvinceControl, WhySrc,statusBar} = Control;
+  const isFocused = useIsFocused();
+
+  const changeBarColor = (color: string) => {
+
+    if (isAndroid) {
+      useChangeNavigationBar({
+        color: color,
+        colorScheme,
+      });
+    }
+  };
+
+  useEffect(() => {
+    if(isFocused){
+      changeBarColor(statusBar.defaultNavigationBarColor[colorScheme]);
+    }
+    return () => {};
+  }, [isFocused]);
 
   const whyTurkeyButtonPressHandler = () => {
     navigation.navigate("WhyScreen");
+    changeBarColor(WhySrc.navBarColor[colorScheme]);
   };
 
   const letStartButtonPressHandler = () => {
+    changeBarColor(SelectProvinceControl.navBarColor[colorScheme]);
     navigation.navigate("SelectProvinceStack");
   };
 

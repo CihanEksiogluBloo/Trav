@@ -10,7 +10,7 @@
 
 import React from "react";
 import {SafeAreaView, StatusBar, StyleSheet} from "react-native";
-import AppNavigator from "./src/Navigation/AppNavigator";
+import AppNavigator from "./src/Navigation/AppNavigator.android";
 import {store, persistor} from "./src/Store/store";
 import {Provider} from "react-redux";
 import {PersistGate} from "redux-persist/integration/react";
